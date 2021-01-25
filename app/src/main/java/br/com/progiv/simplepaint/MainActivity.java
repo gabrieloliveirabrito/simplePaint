@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity {
     public void limparDesenho(View view) {
         viewCanvas.limparCanvas();
     }
+
+    public void corVerde(View view) {
+        viewCanvas.limparCanvas();
+        viewCanvas.inicializaObjetosVerde();
+    }
 }
