@@ -25,4 +25,13 @@ public class Estilo {
         return  estiloLinhaVerde;
     }
 
+    public static Paint getEstiloPessoal(){
+        Paint estiloLinhaPessoal = new Paint();
+        estiloLinhaPessoal.setAntiAlias(true);
+        estiloLinhaPessoal.setColor(Color.RED);
+        estiloLinhaPessoal.setStyle(Paint.Style.STROKE);
+        estiloLinhaPessoal.setStrokeWidth(8f);
+        estiloLinhaPessoal.setStrokeJoin(Paint.Join.ROUND);
+        return  estiloLinhaPessoal;
+    }
 }

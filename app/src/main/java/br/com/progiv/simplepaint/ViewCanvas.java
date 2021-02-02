@@ -27,13 +27,22 @@ public class ViewCanvas extends View {
 
     //inicializar os objetos
     private void inicializaObjetos(){
+        if(path == null)
         path = new Path();
         linha = new Linha(getContext(), path);
     }
 
     public void inicializaObjetosVerde(){
+        if(path == null)
         path = new Path();
         Paint paint = Estilo.getEstiloParaLinhaVerde();
+        linha = new Linha(getContext(), path, paint);
+    }
+
+    public void inicializaObjetosPessoal(){
+        if(path == null)
+        path = new Path();
+        Paint paint = Estilo.getEstiloPessoal();
         linha = new Linha(getContext(), path, paint);
     }
 
